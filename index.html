@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Farah Ben Nasr — Ingénieure Data & IA</title>
+<meta name="description" content="Portfolio de Farah Ben Nasr, ingénieure Data Science & IA : agents IA, RAG, IA générative, MLOps et automatisation.">
+<meta name="theme-color" content="#fafaf8">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")==="dark"?"dark":"light"}catch(e){document.documentElement.dataset.theme="light"}</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Aller au contenu</a>
+
+<header class="top" id="top">
+  <div class="wrap bar">
+    <a class="logo" href="#hero" aria-label="Farah Ben Nasr"><span class="dot"></span>Farah Ben Nasr</a>
+    <nav id="nav" aria-label="Navigation principale">
+      <a href="#projects" data-i18n="nav_projects">Projets</a>
+      <a href="#about" data-i18n="nav_about">À propos</a>
+      <a href="#experience" data-i18n="nav_exp">Expérience</a>
+      <a href="#skills" data-i18n="nav_skills">Compétences</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </nav>
+    <div class="tools">
+      <div class="lang" role="group" aria-label="Langue">
+        <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button type="button" class="theme" id="theme" aria-label="Thème sombre" title="Thème sombre">◐</button>
+      <button type="button" class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero wrap" id="hero">
+    <div class="hero-text">
+      <p class="eyebrow" data-i18n="hero_eyebrow">Ingénieure Data Science & IA</p>
+      <h1><span data-i18n="hero_hello">Bonjour, je suis</span> <span class="grad">Farah Ben Nasr</span></h1>
+      <p class="lead" data-i18n="hero_lead"></p>
+      <ul class="pills" aria-label="Domaines">
+        <li>RAG</li><li>Agents IA</li><li>IA générative</li><li>Power Platform</li><li>MLOps</li>
+      </ul>
+      <div class="cta">
+        <a class="btn primary" href="#projects" data-i18n="cta_projects">Voir mes projets</a>
+        <a class="btn" href="#contact" data-i18n="cta_contact">Me contacter</a>
+      </div>
+      <ul class="links">
+        <li><a href="https://www.linkedin.com/in/farah-ben-nasr-63bb68217/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="mailto:bennasrfarah593@gmail.com">E-mail</a></li>
+      </ul>
+    </div>
+    <div class="hero-card">
+      <div class="ring"><div class="avatar" id="avatar">
+        <img id="photo" src="assets/photo.jpg" alt="" width="156" height="156">
+        <span id="initials">FB</span>
+      </div></div>
+      <dl class="stats">
+        <div><dt data-i18n="stat_intern">Stages</dt><dd>4</dd></div>
+        <div><dt data-i18n="stat_proj">Projets</dt><dd>11</dd></div>
+        <div><dt data-i18n="stat_lang">Langues</dt><dd>3</dd></div>
+      </dl>
+      <p class="seek" data-i18n="seek"></p>
+    </div>
+  </section>
+
+  <section class="wrap sec" id="projects">
+    <p class="kicker" data-i18n="proj_kicker">Réalisations</p>
+    <h2 data-i18n="proj_title">Projets</h2>
+    <p class="sub" data-i18n="proj_sub"></p>
+    <div class="chips" id="chips" role="group" aria-label="Filtrer les projets"></div>
+    <div class="group" id="groupPro">
+      <h3 data-i18n="grp_pro_title">Projets en entreprise</h3>
+      <p class="muted" data-i18n="grp_pro_sub"></p>
+      <div class="grid" id="gridPro"></div>
+    </div>
+    <div class="group" id="groupAcad">
+      <h3 data-i18n="grp_acad_title">Projets académiques</h3>
+      <p class="muted" data-i18n="grp_acad_sub"></p>
+      <div class="grid" id="gridAcad"></div>
+    </div>
+  </section>
+
+  <section class="wrap sec" id="about">
+    <p class="kicker" data-i18n="about_kicker">Profil</p>
+    <h2 data-i18n="about_title">À propos</h2>
+    <div class="about">
+      <p data-i18n="about_p1"></p>
+      <p data-i18n="about_p2"></p>
+      <ul class="facts" id="facts"></ul>
+    </div>
+  </section>
+
+  <section class="wrap sec" id="experience">
+    <p class="kicker" data-i18n="exp_kicker">Parcours</p>
+    <h2 data-i18n="exp_title">Expérience professionnelle</h2>
+    <ol class="timeline" id="timeline"></ol>
+  </section>
+
+  <section class="wrap sec" id="skills">
+    <p class="kicker" data-i18n="skills_kicker">Boîte à outils</p>
+    <h2 data-i18n="skills_title">Compétences</h2>
+    <div class="skills" id="skillsGrid"></div>
+  </section>
+
+  <section class="wrap sec" id="certs">
+    <p class="kicker" data-i18n="cert_kicker">Preuves</p>
+    <h2 data-i18n="cert_title">Certifications</h2>
+    <div class="certs" id="certGrid"></div>
+  </section>
+
+  <section class="wrap sec" id="education">
+    <p class="kicker" data-i18n="edu_kicker">Bagage</p>
+    <h2 data-i18n="edu_title">Formation et engagement</h2>
+    <div class="three" id="eduGrid"></div>
+  </section>
+
+  <section class="wrap sec contact" id="contact">
+    <div class="contact-card">
+      <h2 data-i18n="contact_title">Parlons-en</h2>
+      <p class="sub" data-i18n="contact_sub"></p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:bennasrfarah593@gmail.com" data-i18n="contact_mail">Envoyer un e-mail</a>
+        <button class="btn" type="button" id="copy" data-i18n="contact_copy">Copier l'adresse</button>
+        <a class="btn" href="https://www.linkedin.com/in/farah-ben-nasr-63bb68217/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="muted small" id="copied" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot"><div class="wrap"><span>© <span id="year"></span> Farah Ben Nasr</span><a href="#top" data-i18n="to_top">Haut de page ↑</a></div></footer>
+
+<dialog id="modal" aria-labelledby="mTitle">
+  <article>
+    <button type="button" class="close" id="mClose" aria-label="Fermer">×</button>
+    <p class="eyebrow" id="mCat"></p>
+    <h3 id="mTitle"></h3>
+    <p class="muted" id="mCtx"></p>
+    <p id="mDesc"></p>
+    <ul id="mPoints"></ul>
+    <p class="result" id="mResult" hidden></p>
+    <ul class="tags" id="mTags"></ul>
+  </article>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
